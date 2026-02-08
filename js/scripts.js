@@ -51,9 +51,11 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
-    });
+    // Activate SimpleLightbox plugin only on pages that load it.
+    if (typeof SimpleLightbox !== 'undefined' && document.querySelector('#portfolio a.portfolio-box')) {
+        new SimpleLightbox({
+            elements: '#portfolio a.portfolio-box'
+        });
+    }
 
 });

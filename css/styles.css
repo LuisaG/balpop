@@ -11456,3 +11456,166 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+.inner-masthead {
+  min-height: 70vh;
+}
+@media (min-width: 992px) {
+  .inner-masthead {
+    min-height: 60vh;
+    height: 60vh;
+  }
+}
+.section-soft {
+  background-color: #f8f9fa;
+}
+.feature-card {
+  background: #ffffff;
+  border: 1px solid rgba(33, 37, 41, 0.08);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(33, 37, 41, 0.05);
+}
+
+/* Visual refresh */
+:root {
+  --bs-primary: #c96f36;
+  --bs-primary-rgb: 201, 111, 54;
+  --balpop-ink: #1d2430;
+  --balpop-muted: #5b6677;
+  --balpop-cream: #f4efe6;
+  --balpop-warm: #e9dbc4;
+}
+
+body {
+  color: var(--balpop-ink);
+  background-color: #f8f4ec;
+  background-image: radial-gradient(circle at 10% 20%, rgba(201, 111, 54, 0.08) 0%, transparent 35%), radial-gradient(circle at 90% 10%, rgba(22, 40, 60, 0.08) 0%, transparent 32%);
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  font-family: "Merriweather", serif;
+  letter-spacing: 0.01em;
+}
+
+p, li {
+  color: var(--balpop-muted);
+}
+
+.page-section {
+  padding: 7rem 0;
+}
+
+hr.divider {
+  max-width: 4.5rem;
+  height: 0.24rem;
+  border-radius: 999px;
+  background-color: var(--bs-primary);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #d27a42 0%, #b85b27 100%);
+  border: 0;
+  box-shadow: 0 10px 24px rgba(184, 91, 39, 0.28);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(135deg, #dd8752 0%, #c0602b 100%);
+  transform: translateY(-1px);
+}
+
+.btn-xl {
+  letter-spacing: 0.08em;
+}
+
+#mainNav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    backdrop-filter: blur(5px);
+    background-color: rgba(25, 35, 47, 0.25);
+  }
+  #mainNav .navbar-brand {
+    color: #fff;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  #mainNav.navbar-shrink {
+    background-color: rgba(255, 250, 245, 0.94);
+    border-bottom: 1px solid rgba(29, 36, 48, 0.08);
+    box-shadow: 0 14px 30px rgba(29, 36, 48, 0.12);
+  }
+  #mainNav.navbar-shrink .navbar-brand,
+  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+    color: #263244;
+  }
+}
+
+header.masthead {
+  background: linear-gradient(to bottom, rgba(22, 34, 49, 0.78) 0%, rgba(24, 35, 48, 0.76) 55%, rgba(24, 35, 48, 0.9) 100%), url("../assets/img/bg-masthead.jpg");
+}
+
+header.masthead .text-white-75 {
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+
+header.masthead h1,
+header.masthead .h1 {
+  text-shadow: 0 12px 34px rgba(0, 0, 0, 0.25);
+}
+
+.inner-masthead {
+  min-height: 64vh;
+}
+
+.section-soft {
+  background: linear-gradient(180deg, rgba(233, 219, 196, 0.38) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.feature-card {
+  border: 1px solid rgba(29, 36, 48, 0.08);
+  border-radius: 1rem;
+  box-shadow: 0 16px 36px rgba(29, 36, 48, 0.09);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 44px rgba(29, 36, 48, 0.13);
+}
+
+#portfolio .portfolio-box img {
+  filter: saturate(0.95) contrast(1.03);
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+#portfolio .portfolio-box:hover img {
+  transform: scale(1.03);
+  filter: saturate(1.08) contrast(1.08);
+}
+
+footer.bg-light {
+  background: linear-gradient(180deg, #f4eee4 0%, #eee4d4 100%) !important;
+}
+
+footer a {
+  color: #8e4a24;
+}
+
+@media (max-width: 991.98px) {
+  #mainNav {
+    background-color: rgba(255, 250, 245, 0.98);
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: #2b3647;
+  }
+  .page-section {
+    padding: 5rem 0;
+  }
+}

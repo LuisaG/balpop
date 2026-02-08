@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npx serve .",
-    "build": "mkdir -p build && cp -r index.html css js assets CNAME build/",
+    "build": "rm -rf build && mkdir -p build && cp -r *.html css js assets CNAME robots.txt sitemap.xml build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
