@@ -11838,21 +11838,51 @@ footer a {
   color: #243145 !important;
 }
 
+/* Container full-width control */
+#portfolio .row {
+  margin: 0;
+}
+
+/* Box-ul imaginii */
 .portfolio-box {
   position: relative;
   display: block;
   width: 100%;
-  height: 350px; /* ajustează dacă vrei mai mare / mai mic */
+  height: 280px;              /* desktop default */
   overflow: hidden;
 }
 
+/* Imaginea */
 .portfolio-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* cheia 🔑 */
+  object-fit: cover;          /* NU deformează */
+  display: block;
+  transition: transform 0.4s ease;
 }
 
+/* Hover elegant */
 .portfolio-box:hover img {
-  transform: scale(1.05);
-  transition: transform 0.4s ease;
+  transform: scale(1.06);
+}
+
+/* Extra large screens (4K / ultrawide) */
+@media (min-width: 1600px) {
+  .portfolio-box {
+    height: 340px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .portfolio-box {
+    height: 240px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .portfolio-box {
+    height: 200px;
+  }
 }
