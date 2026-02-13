@@ -110,7 +110,7 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     // Show a centered pop-up for contact email instead of navigating away.
-    const emailLinks = [].slice.call(document.querySelectorAll('a[href="mailto:balpopinstal@gmail.com"]'));
+    const emailLinks = [].slice.call(document.querySelectorAll('a[href="mailto:etmax3d@gmail.com"]'));
     if (emailLinks.length > 0) {
         const popupOverlay = document.createElement('div');
         popupOverlay.className = 'email-popup-overlay';
@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', event => {
             <div class="email-popup" role="dialog" aria-modal="true" aria-label="Date de contact email">
                 <button type="button" class="email-popup-close" aria-label="Inchide">×</button>
                 <h3 class="email-popup-title">Contact email</h3>
-                <p class="email-popup-value">balpopinstal@gmail.com</p>
+                <p class="email-popup-value">etmax3d@gmail.com</p>
                 <p class="email-popup-help">Emailul a fost copiat in clipboard.</p>
             </div>
         `;
@@ -133,7 +133,7 @@ window.addEventListener('DOMContentLoaded', event => {
         const showPopup = async () => {
             const help = popupOverlay.querySelector('.email-popup-help');
             try {
-                await navigator.clipboard.writeText('balpopinstal@gmail.com');
+                await navigator.clipboard.writeText('etmax@gmail.com');
                 help.textContent = 'Emailul a fost copiat in clipboard.';
             } catch (_err) {
                 help.textContent = 'Copiere indisponibila. Poti folosi adresa afisata.';
