@@ -11886,3 +11886,162 @@ footer a {
     height: 200px;
   }
 }
+
+.portfolio-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.03);
+}
+
+.before-after-card img {
+  width: 100%;
+  height: 260px;     
+  object-fit: cover;  
+  border-radius: 8px;
+}
+
+.carousel-item img {
+  height: 80vh;
+  object-fit: contain;
+  background: #000;
+}
+
+.category-card {
+  display: block;
+  padding: 30px 20px;
+  height: 100%;
+  background: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #212529;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  color: #0d6efd;
+}
+
+.category-card--dark {
+  display: block;
+  padding: 28px 20px;
+  height: 100%;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #fff;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s ease;
+}
+
+.category-card--dark i {
+  font-size: 2.3rem;
+  color: #fff;
+}
+
+.category-card--dark h5 {
+  margin-bottom: 6px;
+}
+
+header .category-card--dark p {
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: rgba(255,255,255,0.85);
+}
+
+.category-card--dark:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  color: #fff;
+}
+
+.category-row {
+  --bs-gutter-x: 0.75rem; /* default is 1.5rem */
+}
+
+.row.g-4 {
+  --bs-gutter-x: 0.5rem; /* default is 1.5rem */
+}
+
+.image-card-ferestre-pvc {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.image-card-ferestre-pvc img {
+  width: 100%;
+  height: 440px;          /* forces equal height */
+  object-fit: cover;     /* no distortion */
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.image-caption-ferestre-pvc {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* INFO BOXES – Inchideri balcoane */
+.info-box {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px 24px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-box i {
+  font-size: 2.4rem;
+  color: #fd7e14; /* portocaliu Bootstrap */
+  display: block;
+}
+
+.info-box h5 {
+  margin: 15px 0 12px;
+  font-weight: 600;
+}
+
+.info-box p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.info-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.orange-bullets {
+  list-style: none; /* dezactivează marker-ul implicit */
+  padding-left: 0;  /* reset padding */
+}
+
+.orange-bullets li {
+  position: relative;
+  padding-left: 1.5em; /* spațiu pentru bullet */
+  margin-bottom: 0.5em;
+  color: inherit; /* păstrează text-muted */
+}
+
+.orange-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff7f00; /* bullet portocaliu */
+  font-weight: bold;
+}
+
+
